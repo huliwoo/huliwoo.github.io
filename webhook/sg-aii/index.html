@@ -105,14 +105,25 @@
           </div>
           <ul class="time-info">
             <li>
-              <span><strong>Published:</strong></span> <time class="date-updated"><?= date("M d, Y", strtotime("-2 days")); ?></time>
+              <span><strong>Published:</strong></span> <time class="date-updated">
+                <script language=Javascript>
+                  var monthNames = new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+                  var now = new Date();
+                  var d5ago = new Date();
+                  d5ago.setDate(d5ago.getDate() - 5);
+                  var d11ago = new Date();
+                  d11ago.setDate(d11ago.getDate() - 11);
+                  var d16ago = new Date();
+                  d16ago.setDate(d16ago.getDate() - 16);
+                  var d21ago = new Date();
+                  d21ago.setDate(d21ago.getDate() - 21);
+                  var d30ago = new Date();
+                  d30ago.setDate(d30ago.getDate() - 30);
+                  var d33ago = new Date();
+                  d33ago.setDate(d33ago.getDate() - 33);
+                  document.write(now.getDate() + " " + monthNames[now.getMonth()] + " " + now.getFullYear());
+                </script></time>
             </li>
-          </ul>
-          <ul class="time-info">
-            <li>
-              <span><strong>Updated:</strong></span> <time class="date-updated"><?= date("M d, Y"); ?></time>
-            </li>
-
           </ul>
         </div>
         <div class="article-type publication-font"><a class="channel-name section-theme-highlight" href="https://glibus.com/index.php?lp=1" target="_blank">News</a></div>
@@ -181,7 +192,7 @@
                     <rect class="st1-h" width="267" height="33"/>
                     <text transform="matrix(1 0 0 1 7.1064 20.1274)" class="st2-h st3-h st4-h">Recent Transactions</text>
                     <text transform="matrix(1 0 0 1 5.1064 55.1274)" class="st2-h st3-h st5-h">
-                      <?= date("M d, Y", strtotime("-5 day")); ?>
+                      <script type="text/javascript">document.write(d5ago.getDate() + " " + monthNames[d5ago.getMonth()] + " " + d5ago.getFullYear());</script>
                     </text>
                     <text transform="matrix(1 0 0 1 23.1064 111.1274)" class="st2-h st6-h st7-h">Interest</text>
                     <text transform="matrix(1 0 0 1 188.1064 83.1274)" class="st8-h st6-h st9-h">+S$25,493.30</text>
@@ -191,19 +202,19 @@
                       <tspan x="0" y="13" class="st2-h st6-h st4-h">Profit Edge</tspan>
                     </text>
                     <text transform="matrix(1 0 0 1 5.1064 138.1274)" class="st2-h st3-h st5-h">
-                      <?= date("M d, Y", strtotime("-11 day")); ?>
+                      <script type="text/javascript">document.write(d11ago.getDate() + " " + monthNames[d11ago.getMonth()] + " " + d11ago.getFullYear());</script>
                     </text>
                     <text transform="matrix(1 0 0 1 5.1064 220.1274)" class="st2-h st3-h st5-h">
-                      <?= date("M d, Y", strtotime("-16 day")); ?>
+                      <script type="text/javascript">document.write(d16ago.getDate() + " " + monthNames[d16ago.getMonth()] + " " + d16ago.getFullYear());</script>
                     </text>
                     <text transform="matrix(1 0 0 1 5.1064 302.1274)" class="st2-h st3-h st5-h">
-                      <?= date("M d, Y", strtotime("-21 day")); ?>
+                      <script type="text/javascript">document.write(d21ago.getDate() + " " + monthNames[d21ago.getMonth()] + " " + d21ago.getFullYear());</script>
                     </text>
                     <text transform="matrix(1 0 0 1 5.1064 384.1274)" class="st2-h st3-h st5-h">
-                      <?= date("M d, Y", strtotime("-30 day")); ?>
+                      <script type="text/javascript">document.write(d30ago.getDate() + " " + monthNames[d30ago.getMonth()] + " " + d30ago.getFullYear());</script>
                     </text>
                     <text transform="matrix(1 0 0 1 5.1064 467.1274)" class="st2-h st3-h st5-h">
-                      <?= date("M d, Y", strtotime("-33 day")); ?>
+                      <script type="text/javascript">document.write(d33ago.getDate() + " " + monthNames[d33ago.getMonth()] + " " + d33ago.getFullYear());</script>
                     </text>
                     <polyline class="st10-h" points="6,88.3 11,93.6 16,88.3 "/>
                     <text transform="matrix(1 0 0 1 23.1064 276.1274)" class="st2-h st6-h st7-h">Interest</text>
